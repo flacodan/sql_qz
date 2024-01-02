@@ -26,31 +26,31 @@ SELECT first_name, last_name, email FROM salespeople WHERE region = 'Southwest';
 -- Task: Write a query that shows the common name of melons that cost more
 -- than $5.00.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT common_name FROM melons WHERE price > 5;
 
 -- Problem 6:
 -- Task: Write a query that shows the common name and price for all
 -- watermelons that cost more than $5.00.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT common_name, price FROM melons WHERE price > 5;
 
 -- Problem 7:
 -- Task: Write a query that displays all common names of melons that
 -- start with the letter 'C'.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT common_name, price FROM melons WHERE common_name LIKE 'C%';
 
 -- Problem 8:
 -- Task: Write a query that shows the common name of any melon with
 -- 'Golden' anywhere in the common name.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT common_name FROM melons WHERE common_name LIKE '%Golden%';
 
 -- Problem 9:
 -- Task: Write a query that shows all the distinct regions that a
 -- salesperson can belong to.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT region FROM salespeople GROUP BY region;
 
 -- Problem 10:
 -- Task: Write a query that shows the emails of all salespeople from
