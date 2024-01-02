@@ -56,20 +56,20 @@ SELECT region FROM salespeople GROUP BY region;
 -- Task: Write a query that shows the emails of all salespeople from
 -- both the Northwest and Southwest regions.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT email FROM salespeople WHERE region = 'Northwest' OR region = 'Southwest';
 
 -- Problem 11:
 -- Task: Write a query that shows the emails of all salespeople from
 -- both the Northwest and Southwest regions, this time using an 'IN' clause.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT email from salespeople WHERE region IN ('Northwest', 'Southwest');
 
 -- Problem 12:
 -- Task: Write a query that shows the email, given name, and surname of
 -- all salespeople in either the Northwest or Southwest regions whose
 -- surnames start with the letter 'M'.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT email, first_name, last_name FROM salespeople WHERE last_name LIKE 'M%';
 
 -- Problem 13:
 -- Task: Write a query that shows the melon type, common name, price, and
