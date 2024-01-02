@@ -14,13 +14,13 @@ SELECT * FROM salespeople WHERE region = 'Northwest';
 -- Task: Write a query that shows just the emails of the salespeople from
 -- the 'Southwest' region.
 
-SELECT email, region FROM salespeople WHERE region = 'Southwest';
+SELECT email FROM salespeople WHERE region = 'Southwest';
 
 -- Problem 4:
 -- Task: Write a query that shows the given name, surname, and email of all
 -- salespeople in the 'Northwest' region.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT first_name, last_name, email FROM salespeople WHERE region = 'Southwest';
 
 -- Problem 5:
 -- Task: Write a query that shows the common name of melons that cost more
